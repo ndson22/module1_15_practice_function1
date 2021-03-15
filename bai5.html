@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai5</title>
+</head>
+<body>
+<script>
+    let array1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let array2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    function checkStar(checkValue){
+        let index = array1.indexOf(checkValue);
+        if(index ==-1){
+            alert("Khong tim thay ngoi sao nay");
+        }
+        else {
+            alert("Chom sao cua ngoi sao do la: " + array2[index])
+        }
+    }
+    let value = prompt("Enter a name of star");
+    checkStar(value);
+</script>
+</body>
+</html>
